@@ -1,4 +1,8 @@
- html,body,main{
+
+*{
+  box-sizing: border-box;
+}
+html,body,main{
    height: 100%;
  }
 
@@ -65,7 +69,7 @@
  
  .about-section{
    padding: 80px 0px;
-   height: 50%;
+   height: 60%;
    background-color: #ff5e5e;
  }
 
@@ -89,7 +93,17 @@
  .projects-section {
    padding: 80px 0px;
    height: 100%;
-   background-color: #ff3838;
+   background-color: #f1f2f6;
+   
+ }
+
+ .sub-title{
+   text-align: center;
+   font-family: Roboto;
+   font-size: 250%;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: black;
  }
 
  .projects-container {
@@ -104,26 +118,36 @@
  .projects-list{
    display: flex;
    justify-content: space-around;
-   height: 80%;
+   height: 100%;
    width: 100%;
  }
 
  .card{
    width: 20%;
    margin: 10px;
+   border: 2px solid black;
+   border-radius: 12px;
+   height: 100%;
+ }
+
+ .card:hover{
+   opacity: 1;
  }
 
  img{
-   width: 100%;
-   height: 50%;
+   display: block;
+   margin: 20px auto;
+   width: 70%;
+   height: 40%;
  }
 
 
  .description{
-   padding-top: 30px;
-   font-size: 80%;
-   color: #fff;
+   font-size: 70%;
+   width: 80%;
+   color: black;
    font-family: Roboto;
+   margin: 0px auto;
  }
 
  .btn{
@@ -133,9 +157,88 @@
    border-radius: 12px;
    display: block;
    text-align: center;
-   background-color: #ff4d4d;
-   margin-top: 10px;
+   background-color: #2f3542;
+   width: 50%;
+   padding: 8px;
+   margin: 30px auto;
+   font-size: 70%;
+ }
+ /*END OF PROJECTS SECTION*/
+
+ /*CONTACT SECTION*/
+ .contact-section{
+   background-color: #2f3542;
+    height: 100%;
+   padding: 80px 0px;
  }
 
+ .contact-title{
+   color: white;
+   font-family: Roboto;
+   font-weight: 900;
+   font-size: 240%;
+   text-transform: uppercase;
+   text-align: center;
+  
+ }
+ form{
+   height: 100%;
+ }
 
- /*END OF PROJECTS SECTION*/
+ .form-container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+ }
+
+ .form-group{
+   width: 25%;
+ }
+
+ label{
+   color: white;
+   font-size: 100%;
+   font-family: Roboto;
+   text-transform: uppercase;
+   
+ }
+ input[type="text"]{
+   display: block;
+   margin: 30px auto;
+   padding: 8px;
+   width: 100%;
+   border-radius: 12px;
+ }
+
+ input[type="submit"] {
+   display: block;
+   margin: 30px auto;
+   padding: 8px;
+   width: 60%;
+   border-radius: 12px;
+   font-size: 90%;
+   font-family: Roboto;
+   text-transform: uppercase;
+   color: white;
+   background-color: #57606f;
+   border-color: #57606f;
+   transition: background-color 0.50s,border-color 0.50s;
+ }
+
+ input[type="submit"]:hover{
+   background-color:#2ed573;
+   border-color: #2ed573;
+ }
+
+ footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Roboto;
+   font-size: 90%;
+   height: 5%;
+   background-color: #3d3d3d;
+   color: white;
+ }
+ /*END OF CONTACT SECTION*/
