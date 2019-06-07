@@ -68,7 +68,13 @@
 
   img{
     height: auto;
+    width: 60%;
   }
+
+  .form-group {
+    width: 80%;
+  }
+
 
 }
 
