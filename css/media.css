@@ -1,23 +1,41 @@
 @media screen and (max-width:578px){
+
+   .navigation-container {
+     display: flex;
+     height: auto;
+   }
+
+   li {
+     padding: 10px;
+   }
+   .menu-container {
+     display: block;
+     text-align: center;
+     width: 100%;
+     background-color: #ff4d4d;
+   }
+   
   .title-container > .title{
    font-family: Roboto;
    font-weight: 900;
    font-size: 380%;
    color: #fff;
    text-align: center;
+   height: auto;
  }
   .about-section {
     
-    background-color: #ff5e5e;
+     background-color: #1e90ff;
     height: 100%;
   }
 
  .text-container {
-   text-align: justify;
+   text-align: center;
    color: #fff;
    font-size:120%;
+   font-family: Lato;
     padding: 80px 5px; 
-    width: 100%;
+    width: 90%;
  }
 
   .projects-section {
